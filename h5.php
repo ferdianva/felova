@@ -17,7 +17,7 @@
                                         <li><button onclick="window.location.href='h2.php'" class="bt" ><img src="asset/Icon-Dashboard.png" alt="dashboard" class="responsive" width="50px" height="50px"></button></li>
                                         <li><button onclick="window.location.href='h3-1.php'" class="bt"><img src="asset/Icon-Grafik.png" alt="grafik" class="responsive" width="50px" height="50px"></button></li>
                                         <li><button onclick="window.location.href='h4-1.php'" class="bt"><img src="asset/Icon-Tables.png" alt="table" class="responsive" width="50px" height="50px"></button></li>
-                                        <li><button  onclick="window.location.href='h5.php'" class="bt"><img src="asset/Icon-Aboutus.png" alt="About Us" class="responsive" width="50px" height="50px"></button></li>
+                                        <li><button  onclick="window.location.href='h5.php'" class="bt active"><img src="asset/Icon-Aboutus.png" alt="About Us" class="responsive" width="50px" height="50px"></button></li>
                                         <span class="responsive" style="float: right"> <h5 id="time"></h5></span>
                                     </ul>  
                                     
@@ -230,12 +230,12 @@
         padding-bottom: 5px ;
     }
 
-    .bt:active{
+    .bt.active{
         background-color: #f7f7f6;
         border-bottom-left-radius: 1px;
         border-bottom-right-radius: 1px;
         padding: 5px;
-        padding-bottom: 25px;
+        padding-bottom: 10px;
         padding-top: 5px;
     }
 

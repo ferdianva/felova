@@ -18,7 +18,7 @@
                                         <li><img src="asset/Logo 2.png" alt="logo felova"  width="50px" height="50px"></li>
                                         <li><button  onclick="window.location.href='h2.php'" class="bt"><img src="asset/Icon-Dashboard.png" alt="dashboard" class="responsive" width="50px" height="50px"></button></li>
                                         <li><button  onclick="window.location.href='h3-1.php'" class="bt"><img src="asset/Icon-Grafik.png" alt="grafik" class="responsive" width="50px" height="50px"></button></li>
-                                        <li><button  onclick="window.location.href='h4-1.php'" class="bt"><img src="asset/Icon-Tables.png" alt="table" class="responsive" width="50px" height="50px"></button></li>
+                                        <li><button  onclick="window.location.href='h4-1.php'" class="bt active"><img src="asset/Icon-Tables.png" alt="table" class="responsive" width="50px" height="50px"></button></li>
                                         <li><button  onclick="window.location.href='h5.php'" class="bt"><img src="asset/Icon-Aboutus.png" alt="About Us" class="responsive" width="50px" height="50px"></button></li>
                                         <span class="responsive" style="float: right"> <h5 id="time"></h5></span>
                                     </ul>  
@@ -35,7 +35,7 @@
                             <button  onclick="window.location.href='h4-1.php'" class="button-b">BLOK 1</button>
                             <button  onclick="window.location.href='h4-2.php'" class="button-b">BLOK 2</button>
                             <button  onclick="window.location.href='h4-3.php'"class="button-b">BLOK 3</button>
-                            <button  onclick="window.location.href='h4-4.php'"class="button-b">BLOK 4</button>
+                            <button  onclick="window.location.href='h4-4.php'"class="button-b active">BLOK 4</button>
                         </div>
                     </div>
                     <div class="column2" style="background-color:#f7f7f6;">
@@ -202,12 +202,12 @@
         padding-bottom: 5px ;
     }
 
-    .bt:active{
+    .bt.active{
         background-color: #f7f7f6;
         border-bottom-left-radius: 1px;
         border-bottom-right-radius: 1px;
         padding: 5px;
-        padding-bottom: 25px;
+        padding-bottom: 10px;
         padding-top: 5px;
     }
 
@@ -226,6 +226,11 @@
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
         
+    }
+
+    .button-b.active {
+        background-color: #c1ff72;
+
     }
 
     .button-b:hover {

@@ -160,7 +160,7 @@
 
     .column1 {
         float: left;
-        width: 30%;
+        width: 35%;
         margin-top: 0px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 24px;
@@ -174,7 +174,7 @@
 
     .column2 {
         float: right;
-        width: 70%;
+        width: 65%;
         margin-top: 30px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 24px;
@@ -226,6 +226,7 @@
         position: center;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
+        font-size: 16px;
         
     }
 
@@ -296,7 +297,11 @@
                 $('#data').DataTable( {
                     dom: 'Bfrtip',
                     buttons: [
-                        'excel'
+                        {
+                            extend:    'excelHtml5',
+                            text:      'Download',
+                            titleAttr: 'Excel'
+                        }
                     ]
                 } );
             } ); 

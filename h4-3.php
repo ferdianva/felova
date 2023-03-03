@@ -55,7 +55,8 @@
                                 
                                     $no_urut = 0;
 
-                                    $sql = 'SELECT * FROM logdata_3 ORDER BY id ASC';
+                                    $sql = 'SELECT * FROM logdata WHERE blok = 3';
+
 
                                     $query = mysqli_query($conn, $sql); 
    
@@ -286,8 +287,13 @@
             document.getElementById("time").textContent = datetime; // represent on html page
         </script>
         <script>
-          $(document).ready(function () {
-            $('#data').DataTable();
-        });
+             $(document).ready(function() {
+                $('#data').DataTable( {
+                    dom: 'Bfrtip',
+                    buttons: [
+                        'excel'
+                    ]
+                } );
+            } ); 
         </script>
 </html>

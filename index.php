@@ -58,7 +58,7 @@
             }
 
             .button {
-                border: 1px;
+                border: 2px;
                 color: #4CAF50;
                 text-align: center;
                 text-decoration: none;
